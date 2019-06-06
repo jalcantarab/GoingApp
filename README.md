@@ -38,32 +38,31 @@ Requirements
 
 Building a quick API From scratch
 =======
-# Clone or Download the [API Template](#) repository to have the folders & files created 
-# Install Node.js & MongoDB
-# init the npm environment to create a package.json file. (Optional) Input the values that you want to fill out
+Clone or Download the [API Template](#) repository to have the folders & files created 
+Install Node.js & MongoDB
+init the npm environment to create a package.json file. (Optional) Input the values that you want to fill out
 ```
 npm init
 ```
-# Add the necessary packages: 
+Add the necessary packages: 
 ```
 npm install --save-dev nodemon
 ```
 ```
 npm install express --save
 ```
-# Open the package.json file and add this task to the script
+Open the package.json file and add this task to the script
 ```
 "start": "nodemon server.js"
 ```
-# Start your database. 
+Start your database. 
 On Mac, run 
 ```
 mongod
 ```  
 For Windows, follow the guide below. 
 
-# Start your server. 
-Go to the terminal, on your project directory, and run
+Start your server. To do so, go to the terminal, on your project directory, and run
 ```
 npm run start
 ``` 
