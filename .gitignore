@@ -1,0 +1,8 @@
+# ignore all logs
+*.log
+
+# ignore the random file
+jarandom.txt
+
+# ignore the specific profile data
+profile.json
