@@ -2,8 +2,10 @@
 
 var mongoose = require('mongoose'),
   Task = mongoose.model('Tasks');
+mongoose.set('useFindAndModify', false);
 
-  /**
+
+/**
  * Route listing all tasks.
  * @name get/tasks
  * @function
@@ -46,7 +48,7 @@ exports.update_a_task = function(req, res) {
 };
 
 exports.delete_a_task = function(req, res) {
-  Task.remove({
+  Task.deleteOne({
     _id: req.params.taskId
   }, function(err, task) {
     if (err)

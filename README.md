@@ -14,12 +14,14 @@ A profile & contact API for anyone.
 
 Features
 ========
+* Set up quickly a personal API
+* Get quickly set up with the [POSTman Collection](https://documenter.getpostman.com/view/1285311/S1TYVwaQ?version=latest#c6924ef6-9129-4435-a40c-6889ea4ac911)
 * Profile creation filling up a form
 * Retrieve & update your information through the available endpoints
 * Connect your number with Twilio to enable the contact-me endpoint 
 * Make it easier to start with a website using your up-to-date information, mass-job-application, or to share facts about yourself
 
-Creating your profile is just the first step. Some of the things on our roadmap include:
+Creating your profile is just the first step. Some of the things on the roadmap include:
 * Connect your LinkedIn, Glassdoor, git,...
 * Front-end library to add a chat window to contact through sms
 
@@ -38,9 +40,10 @@ Requirements
 
 Building a quick API From scratch
 =======
-Clone or Download the [API Template](#) repository to have the folders & files created 
-Install Node.js & MongoDB
-init the npm environment to create a package.json file. (Optional) Input the values that you want to fill out
+* Clone or Download the [API Template](#) repository to have the folders & files created 
+* Install Node.js & MongoDB
+* Initialize the npm environment to create a package.json file that will store your dependencies. 
+(Optional) Input the values that you want to fill out
 ```
 npm init
 ```
@@ -66,7 +69,7 @@ Start your server. To do so, go to the terminal, on your project directory, and 
 ```
 npm run start
 ``` 
-=======
+
 Installing MongoDB on Windows 10
 =======
 If you, like me, want to first test it all in your machine and are stuck with a Win10, 

@@ -2,7 +2,8 @@ var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
-  Task = require('./api/models/todoListModel'), //created model loading here
+  Task = require('./api/models/todoTaskModel'), //created model loading here
+  Profile = require('./api/models/profile'),
   bodyParser = require('body-parser');
   
 // mongoose instance connection url connection
@@ -13,8 +14,12 @@ mongoose.connect('mongodb://localhost/Tododb', { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routes/todoListRoutes'); //importing route
-routes(app); //register the route
+var todoListRoutes = require('./api/routes/todoTaskRoutes'); //importing todoListroutes routes
+var profileRoutes = require('./api/routes/profileRoutes'); //importing Profile routes
+//register the route
+todoListRoutes(app);
+profileRoutes(app); 
+
 
 // define error-handling middleware last, after other app.use() and routes calls
 app.use(function(req, res) {
