@@ -1,0 +1,48 @@
+Hi (Recruiter’s name),
+
+My name is (your name), currently working as (your current role) at (name of your current company). I discovered your posting for (mention job title) on (mention specific job board or website). [Include URL to the job post]
+
+I wanted to share with you the (strategy/process/platform) that I had previously worked on for (name of relevant company/client). I adapted it for (name of recruiter’s company) based on what I know works from my experience in (mention relevant skill).
+
+In the past, I have helped (name of company) (highlight project specs). This has led to (mention specific benefits). You can also check out some of my more recent projects here: [insert relevant URL]
+
+I have a solid background in (highlight your skills/experience) and I’m looking forward to helping (name of recruiter’s company) to (mention specific benefit).
+
+Are you available for a short 15-minute chat on (mention specific date and time) to discuss this further?
+
+Best,
+
+(Your name).
+
+
+----
+Have values will travel
+
+Value systems are proscriptive and prescriptive beliefs; As such, values reflect a person's sense of right and wrong or what "ought" to be; what we hold true, what we consider good, what we consider to be bad. These values define how we respond to situations and how we make decisions.
+
+Values are ideas that guide us in action. In this, they are similar to plans, and so, it is the responsibility of any "planner" (from Product Mgr to CEO) to establish those guides that will drive the overall direction of a team's actions. 
+
+And I'll hold true, that as management goes "Good", by my values, is an engineering organization that is committed to the notion of distributed authority and individual empowerment; to facilitate this we need alignment around common values and goals. 
+
+The alternative, I'm afraid, is to regress into command and control authoritative systems. And I know that it is hard to escape this leadership style’s historic influence and dominance; sometimes it feels like the most stable solution. But no, as a change leader, you must bring it.
+
+At the start of a company's journey, probably most peers have a lot in common, where we live, where we work, and how well we all go onwards & get along, our values are already likely to be very well aligned. But as we grow and a company grows around us, or when in environments where cultures & values melt to form a kaleidoscope of sorts this will be less evident and harder to get alignment on.
+
+This short post puts forth a set of engineering values that I have tried to apply always, and have learned through experience and listening. They are not immutable, and experience will continuously refine them.
+
+Independently of your agreement on the below, I would like to get your nodding at least on this: "Whichever your values are, you should know them well, and they should influence how you make decisions always". If you do that, your team or organization will evolve and grow around those values like a 
+
+* Everyone can teach you something; human connection is the main latch to bringing out the best in us all (Yes!, including we geeky engineers)
+* Diversity, inclusiveness & support. Diversity will give a team a window into new perspectives and ideas.
+* Rigorousness, Simplicity & Resolution. Take action, passive resolutions rarely exist, reward technical exactitude and avoid convoluted explanations. From project scopes to performance, simple & succinct is better.
+* Start off right. Engineer Onboarding is meant to guide & stablishes the pace for the position. Help new hires focus on the right tasks, and set expectations to help them be successful at new organization. Onboarding has a high return on investment; the more effort you put in, the better the result.
+* Individual Pursuit of greatness is a virtue, for a team, is a uniting force. The individual contributions get diluded on a complex project, but the pride of its success belongs to all members.  
+
+Know that not everything is written, and you can pave the way in how engineering teams will operate and function. 
+
+So, know your values, and have a good weekend!
+
+
+----
+Engineer Onboarding is meant to guide new engineers, help them focus on the right tasks, and set expectations to help them be successful at new organization. 
+Onboarding has a high return on investment; the more effort you put in, the better the result.
