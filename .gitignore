@@ -6,4 +6,11 @@ jarandom.txt
 
 # ignore the specific profile data
 profile.json
+# ignore the Personal Resume files
+latex/resume/
+latex/cv/
+latex/coverLetter/
 
+# ignore the Personal e-mail files
+profile/*.txt
+latex/coverLetter/
