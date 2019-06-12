@@ -1,13 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for Cover Letter
+% Awesome CV LaTeX Template for CV/Resume
 %
 % This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
 %
-% Authors:
+% Author:
 % Claud D. Park <posquit0.bj@gmail.com>
-% Lars Richter <mail@ayeks.de>
+% http://www.posquit0.com
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -31,7 +31,8 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+%\definecolor{awesome}{HTML}{949393}{107896}
+\definecolor{awesome}{HTML}{107896}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -46,70 +47,42 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION HEADER
 %	Go to the profileHeader.tex file to modify the values
 %-------------------------------------------------------------------------------
 
-\newcommand{\companyName}{DeepMap}
-\newcommand{\jobType}{Project}
-\newcommand{\jobTitle}{Technical Program Manager}
-\input{formData/profileHeader.tex}
-
-
-%-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
-%-------------------------------------------------------------------------------
-% The company being applied to
-\recipient
-  {To: \companyName \ Recruitment Team}
-% The date on the letter, default is the date of compilation
-\letterdate{\today}
-% The title of the letter
-\lettertitle{\profileName \ \profileLastName \ for \jobTitle \ @ \companyName}
-% How the letter is opened
-\letteropening{Dear \companyName \ Recruitment Team,}
-% How the letter is closed
-\letterclosing{Sincerely,}
-% Any enclosures with the letter
-
-
+\newcommand{\companyName}{6sense}
+\newcommand{\jobType}{product}
+\newcommand{\jobTitle}{Product Manager}
+\input{formData/resumeHeader.tex}
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[R]
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {\profileName \ \profileLastName \ ~~~·~~~Cover Letter}
-  {}
-
-% Print the title with above letter informations
-\makelettertitle
-
-%-------------------------------------------------------------------------------
-%	LETTER CONTENT
-%-------------------------------------------------------------------------------
-\begin{cvletter}
-
-\input{coverLetter/me/aboutMe\jobType.tex}
-
-%\input{coverLetter/co/why\companyName}
-\lettersection{Why \companyName ?}{To work with you to solve challenging problems while cultivating my passion for automation & data. The autonomous driving revolution will need a need the high-fidelity that only the best quality data can provide. 
-
-I want to help you pave the route to Autonomy. Be a force in the resolution of the engineering problems to acquire a multi-dimensional understanding of location so that autos can navigate safely enough for regulation and users to adopt it as the norm.}
-\input{coverLetter/me/whyMe\jobType.tex}
-
-\end{cvletter}
+  {Jorge Alcantara~~~·~~~Your next co-worker}
+  {\thepage}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
-\makeletterclosing
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{resume/\jobType/summary.tex}
+\input{resume/\jobType/experience.tex}
+\input{resume/education.tex}
+\input{resume/\jobType/skills.tex}
 
+%-------------------------------------------------------------------------------
 \end{document}

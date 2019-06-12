@@ -31,7 +31,9 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+%\definecolor{awesome}{HTML}{949393}{107896}
+%\definecolor{awesome}{HTML}{107896}
+%\definecolor{awesome}{HTML}{949393}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -51,30 +53,18 @@
 \makeatother
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+%	PERSONAL INFORMATION HEADER
+%	Go to the profileHeader.tex file to modify the values
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{profile}
-\name{Jorge}{Alcantara}
-\position{Engineering Manager{\enskip\cdotp\enskip} Technology Consultant}
-\address{San Mateo, California, U.S.A.}
 
-\mobile{+1 (312) 647-9905}
-\email{jorgeakairos@gmail.com}
-\homepage{www.jalcantara.pro}
-\github{jalcantarab}
-\linkedin{jorgeakairos}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \extrainfo{extra informations}
+\newcommand{\companyName}{Amazon}
+\newcommand{\jobType}{product}
+\newcommand{\jobTitle}{Product Manager}
+\input{formData/resumeHeader.tex}
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[C]
 
@@ -90,11 +80,12 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-\input{resume/education.tex}
-% \input{resume/skills.tex}
+%\input{resume/\jobType/summary.tex}
 
+\input{resume/\jobType/aboutMe.tex}
+\input{resume/\jobType/experience.tex}
+\input{resume/education.tex}
+\input{resume/\jobType/skills.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
