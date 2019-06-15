@@ -1,18 +1,17 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
+% Unparalleled Vitae LaTeX Resume Template
 %
 % This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
+% https://github.com/jalcantarab/GoingApp
 %
-% Author:
+% Authors:
 % Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
+% Jorge Alcantara <jorgeakairos@gmail.com>
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
-
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
@@ -30,8 +29,9 @@
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+% Un-comment if you would like to specify your own color
+%Awesome Red{5879da}; Nice Blue{107896}; Sleek Gray {949393}
+\definecolor{awesome}{HTML}{5879da}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -46,44 +46,32 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+%	PERSONAL INFORMATION HEADER
+%	Go to the profileHeader.tex file to modify the values
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{profile.png}
-\name{Jorge}{Alcantara}
-\position{Engineering Manager{\enskip\cdotp\enskip} Technology Consultant}
-\address{San Mateo, California, U.S.A.}
 
-\mobile{+1 (312) 647-9905}
-\email{jorgeakairos@gmail.com}
-\homepage{www.jalcantara.pro}
-\github{jalcantarab}
-\linkedin{jorgeakairos}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \extrainfo{extra informations}
-
-\quote{``Ad Augusta per Angusta."}
-
-
+\newcommand{\jobType}{product}
+\input{headers/\jobType.tex}
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
+% Take the day one day back. Careful with the 1st of every month
+\advance\day by -1
+
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Jorge Alcantara~~~·~~~Curriculum Vitae}
+  {\profileName \ \profileLastName \ ~~~·~~~Your next co-worker}
   {\thepage}
 
 
@@ -91,12 +79,12 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/writing.tex}
+%\input{resume/\jobType/summary.tex}
 
-
+\input{resume/\jobType/experience.tex}
+\input{resume/\jobType/skills.tex}
+%\pagebreak
+\input{resume/education.tex}
+\input{resume/\jobType/aboutMe.tex}
 %-------------------------------------------------------------------------------
 \end{document}

@@ -1,13 +1,14 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for Cover Letter
+% Unparalleled Vitae LaTeX Cover Letter Template
 %
 % This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
+% https://github.com/jalcantarab/GoingApp
 %
 % Authors:
 % Claud D. Park <posquit0.bj@gmail.com>
 % Lars Richter <mail@ayeks.de>
+% Jorge Alcantara <jorgeakairos@gmail.com>
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -27,14 +28,9 @@
 \fontdir[fonts/]
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
+% Uncomment any of the below if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
@@ -48,16 +44,23 @@
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION HEADER
-%	Go to the profileHeader.tex file to modify the values
+%	JOB INFORMATION
+%	Fill-in these values with the details of the opportunity
 %-------------------------------------------------------------------------------
 
 \newcommand{\companyName}{LivePerson}
-\newcommand{\jobType}{Product}
+\newcommand{\jobType}{product}
 \newcommand{\jobTitle}{Product Manager}
-\input{formData/header\jobType}
 
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION HEADER
+%	Go to the headers folder to modify the values
+%-------------------------------------------------------------------------------
 
+\input{headers/\jobType}
+
+% QUOTE, comment or replace with your own branding motto
+\quote{``Lead by example, and blaze the trail"}
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
@@ -79,36 +82,38 @@
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the personal information header
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
+% Leave any of these blank if not used
 \makecvfooter
   {\today}
-  {\profileName \ \profileLastName \ ~~~·~~~Cover Letter}
-  {}
+  {\profileName \ \profileLastName \ ~~~·~~~ Your Next Co-worker}
+  {Cover Letter}
 
-% Print the title with above letter informations
+% Print the title with information from the file
 \makelettertitle
 
 %-------------------------------------------------------------------------------
-%	LETTER CONTENT
+%	LETTER BODY
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\input{coverLetter/me/aboutMe\companyName}
+\input{coverLetter/me/aboutMe_\jobType}
 
 \input{coverLetter/co/why\companyName}
+% Un-comment the below line and comment the above to inject the Why Company text here 
 % \lettersection{Why \companyName ?}{}
-\input{coverLetter/me/whyMe\companyName}
+
+\input{coverLetter/me/whyMe_\jobType}
 
 \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
+% Print the signature and letter end with information from the file
 \makeletterclosing
 
 \end{document}
