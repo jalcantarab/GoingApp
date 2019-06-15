@@ -31,9 +31,9 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-%\definecolor{awesome}{HTML}{949393}{107896}
+%\definecolor{awesome}{HTML}{5879da}{107896}{949393}
 %\definecolor{awesome}{HTML}{107896}
-%\definecolor{awesome}{HTML}{949393}
+\definecolor{awesome}{HTML}{5879da}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -57,10 +57,10 @@
 %	Go to the profileHeader.tex file to modify the values
 %-------------------------------------------------------------------------------
 
-\newcommand{\companyName}{Amazon}
+\newcommand{\companyName}{Facebook}
 \newcommand{\jobType}{product}
-\newcommand{\jobTitle}{Product Manager}
-\input{formData/resumeHeader.tex}
+\newcommand{\jobTitle}{Technical Project Manager}
+\input{resume/\jobType/header.tex}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -69,6 +69,9 @@
 \makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
+% Take the day one day back. Careful with the 1st of every month
+\advance\day by -1
+
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
@@ -82,10 +85,9 @@
 %-------------------------------------------------------------------------------
 %\input{resume/\jobType/summary.tex}
 
-\input{resume/\jobType/aboutMe.tex}
 \input{resume/\jobType/experience.tex}
+\input{resume/\jobType/skills.tex}\pagebreak
 \input{resume/education.tex}
-\input{resume/\jobType/skills.tex}
-
+\input{resume/\jobType/aboutMe.tex}
 %-------------------------------------------------------------------------------
 \end{document}

@@ -39,6 +39,7 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+\definecolor{awesome}{HTML}{5879da}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -51,10 +52,10 @@
 %	Go to the profileHeader.tex file to modify the values
 %-------------------------------------------------------------------------------
 
-\newcommand{\companyName}{DeepMap}
-\newcommand{\jobType}{Project}
-\newcommand{\jobTitle}{Technical Program Manager}
-\input{formData/profileHeader.tex}
+\newcommand{\companyName}{LivePerson}
+\newcommand{\jobType}{Product}
+\newcommand{\jobTitle}{Product Manager}
+\input{formData/header\jobType}
 
 
 %-------------------------------------------------------------------------------
@@ -63,15 +64,15 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {To: \companyName \ Recruitment Team}
+  {To: \companyName \ Recruiting Manager}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
 \lettertitle{\profileName \ \profileLastName \ for \jobTitle \ @ \companyName}
 % How the letter is opened
-\letteropening{Dear \companyName \ Recruitment Team,}
+\letteropening{Dear \companyName \ Team,}
 % How the letter is closed
-\letterclosing{Sincerely,}
+\letterclosing{Looking forward to speaking soon,}
 % Any enclosures with the letter
 
 
@@ -97,13 +98,11 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\input{coverLetter/me/aboutMe\jobType.tex}
+\input{coverLetter/me/aboutMe\companyName}
 
-%\input{coverLetter/co/why\companyName}
-\lettersection{Why \companyName ?}{To work with you to solve challenging problems while cultivating my passion for automation & data. The autonomous driving revolution will need a need the high-fidelity that only the best quality data can provide. 
-
-I want to help you pave the route to Autonomy. Be a force in the resolution of the engineering problems to acquire a multi-dimensional understanding of location so that autos can navigate safely enough for regulation and users to adopt it as the norm.}
-\input{coverLetter/me/whyMe\jobType.tex}
+\input{coverLetter/co/why\companyName}
+% \lettersection{Why \companyName ?}{}
+\input{coverLetter/me/whyMe\companyName}
 
 \end{cvletter}
 
