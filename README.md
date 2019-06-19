@@ -4,7 +4,7 @@
   </a>
   &nbsp;GoingApp&nbsp;
   <a href="https://www.jalcantara.pro"><img src=https://img.shields.io/badge/purpose-fun-brightgreen.svg></a>
-  <a href="https://www.jalcantara.pro/start"><img src=https://img.shields.io/badge/Try%20it-live-green.svg></a>
+  <a href="https://www.jalcantara.pro/start"><img src=https://img.shields.io/badge/Try%20its-down-red.svg></a>
   <a href="https://github.com/sourcerer-io/sourcerer-app/blob/master/LICENSE.md"><img src=https://img.shields.io/badge/license-MIT-green.svg?colorB=ff0000></a>
 </h1>
 
