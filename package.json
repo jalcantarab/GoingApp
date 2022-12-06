@@ -4,7 +4,7 @@
   "description": "<h1 style=\"font-weight:normal\">   <a href=\"https://www.jalcantara.pro\">     <img src=https://avatars1.githubusercontent.com/u/33139172?s=40&amp;v=4 alt=\"Jalcantara\" width=35>   </a>   &nbsp;GoingApp&nbsp;   <a href=\"https://www.jalcantara.pro\"><img src=https://img.shields.io/badge/purpose-fun-brightgreen.svg></a>   <a href=\"https://www.jalcantara.pro/start\"><img src=https://img.shields.io/badge/Try%20it-live-green.svg></a>   <a href=\"https://github.com/sourcerer-io/sourcerer-app/blob/master/LICENSE.md\"><img src=https://img.shields.io/badge/license-MIT-green.svg?colorB=ff0000></a> </h1>",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongodb": "^3.2.7",
     "nodemon": "^1.19.1",
     "mongoose": "^5.5.13"
